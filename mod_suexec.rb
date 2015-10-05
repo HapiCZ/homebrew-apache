@@ -20,7 +20,6 @@ class ModSuexec < Formula
 
   def install
     system "./configure",
-      #"LDFLAGS=--tag=cc", # Not working with clang
       "--enable-suexec=shared",
       "--with-suexec-bin=/usr/bin/suexec",
       "--with-suexec-caller=_www",
